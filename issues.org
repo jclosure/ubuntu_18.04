@@ -1,0 +1,5 @@
+* TODO
+** the clang errors are not seen in mini-buffer.  likely due to cpplint not working..
+** install .zshrc extras from wssh machine
+** install other .dot files from wssh
+** create a git repo of these dotfiles (agnostic)
