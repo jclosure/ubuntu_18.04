@@ -80,6 +80,12 @@ sudo snap install spottify -y
 
 #### extras
 
+## install uuku to manage kernel updates
+# sudo add-apt-repository ppa:teejee2008/ppa
+# sudo apt update
+# sudo apt install ukuu
+
+
 ## install elixir:
 
 ## install clang-toolchain (v 6.0 as of time of this doc)
