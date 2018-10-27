@@ -10,6 +10,7 @@
 # systemctl restart NetworkManager.service
 
 # this may also work - applied already
+# QCA9377
 # sudo lshw -class network
 # export PRODUCT=`sudo lshw -class network | grep product | awk '{print $2}'`
 
@@ -22,6 +23,13 @@ echo "SUSPEND_MODULES=\"$PRODUCT\"" | sudo tee /etc/pm/sleep.d/config
 sudo chmod +x /etc/pm/sleep.d/config
 
 # echo "options $PRODUCT fwlps=N" | sudo tee /etc/modprobe.d/$PRODUCT.conf
+
+
+# get latest firmware from linux kernel.org
+# wget -m -e robots=off --no-parent https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/plain/ath10k/QCA9377/hw1.0
+
+
+# debug trace
 
 [  172.036295] PM: suspend exit
 [  172.077587] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
